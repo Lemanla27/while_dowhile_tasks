@@ -13,7 +13,7 @@ public class BeginnerTasks {
 //
 //        int multi = 1;
 //        while (num > 0) {
-//            multi = num * multi;//
+//            multi = num * multi;
 //            num--;
 //        }
 //        System.out.println(multi);
@@ -40,10 +40,9 @@ public class BeginnerTasks {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Eded daxil edin:");
 //        int num = sc.nextInt();
-//
 //        int sum = 0;
 //
-//        while (num > 0) {//468
+//        while (num > 0) {
 //            int remainder = num % 10;
 //            sum = sum + remainder;
 //            num = num / 10;
@@ -51,21 +50,19 @@ public class BeginnerTasks {
 //        System.out.println(sum);
 
 
-        //TASK-4
-//Verilmiş ədədin tərsini (əksini) tap (məs: 123 → 321).
+//        TASK-4
+//        Verilmiş ədədin tərsini (əksini) tap (məs: 123 → 321).
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Eded daxil edin:");
 //        int num = scanner.nextInt();
 //
-//        String reverse = "";
-//
-//        while (num > 0) {//456
-//            int remainder = num % 10;//6//5
-//            reverse = reverse + remainder;//6+5
-//            num = num / 10;//45
-//
+//        int reverseNumber = 0;
+//        while (num > 0){
+//            int remainder = num % 10;
+//            reverseNumber = reverseNumber * 10 + remainder;
+//            num = num / 10;
 //        }
-//        System.out.println(reverse);
+//        System.out.println(reverseNumber);
 
 
         //TASK-5
@@ -77,8 +74,7 @@ public class BeginnerTasks {
 //        do {
 //            System.out.println("Musbet eded daxil et:");
 //            num = sc.nextInt();
-//
-//        } while (num < 0);
+//        } while (num <=0);
 //        System.out.println("Daxil edilen eded musbetdir");
 
 
@@ -87,18 +83,18 @@ public class BeginnerTasks {
         //davam etsin.
 
 //        Scanner sc = new Scanner(System.in);
-//        // System.out.println("Sechim daxil edin:1 - Salamlama, 2 -Sagollashma, 0 - Chixish");
 //        int choice;
-//
 //        do {
 //            System.out.println("Sechim daxil edin:1 - Salamlama, 2 -Sagollashma, 0 - Chixish");
 //            choice = sc.nextInt();
-//            if (choice == 1) {
+//            if (choice == 1)
 //                System.out.println("Salam");
-//            } else if (choice == 2)
+//            else if (choice == 2)
 //                System.out.println("Sagolun");
+//            else if (choice == 0) {
+//                System.out.println("Chixish olundu");
+//            }
 //        } while (choice != 0);
-//        System.out.println("Chixish olundu");
 
 
 
@@ -117,5 +113,5 @@ public class BeginnerTasks {
 //            System.out.println(num1 + "*" + num2 + "=" + mult);
 //            num2++;
 //        }
-//    }
-    }}
+    }
+}
