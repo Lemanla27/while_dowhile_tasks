@@ -2,33 +2,24 @@ import java.util.Scanner;
 
 public class IntermediateTasks {
     static void main() {
-        /*
-        3. İki ədəd arasında ən böyük ortaq bölən (GCD) tapmaq üçün Evklid alqoritmini
-        while dövrü ilə yaz.
-        4. İki ədədin ən kiçik ortaq bölünəni (LCM) — yuxarıdakı GCD tapşırığından istifadə
-        edərək.
-         */
-
          //TASK-1
-        // 1.İstifadəçidən daxil edilən ədədin sadə ədəd (prime) olub-olmadığını w
+        // 1.İstifadəçidən daxil edilən ədədin sadə ədəd (prime) olub-olmadığını
         // while dövrü ilə yoxla.
-//
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("eded daxil edin:");
-//        int num = sc.nextInt();//5
+//        int num = sc.nextInt();
 //        int div = 1;
 //        int count = 0;
 //
 //        while (num >= div) {
-//            if (num % div == 0) {
+//            if (num % div == 0)
 //                count++;
-//            }
 //            div++;
 //        }
-//        if (count == 2) {
-//            System.out.println("eded sadedir");
-//        } else
-//            System.out.println("eded sade deyil");
+//
+//        String result = (count == 2) ? "sadedir": "sade deyil";
+//        System.out.println(result);
 
         //TASK-14
         //14. İstifadəçidən ədədlər daxil etməyi davam etdir (do-while ilə),
@@ -49,19 +40,15 @@ public class IntermediateTasks {
 //                sum = sum + num;
 //            }
 //        }while(num!=-1);
-//        {
-//            double average = sum / count;
-//            System.out.println(average);
-
-        //sual: eger en bashda -1 daxil edilseydi?
-        //       }
-
+//
+//        double average = (double)sum / count;
+//        System.out.println(average);
 
 
         //TASK-13
         // 13. Verilmiş bir sətri (String) while dövrü ilə tərsinə çevir
         // (hazır reverse()metodundan istifadə etmədən).
-//
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("cumle daxil edin");
 //        String sentence = sc.nextLine();
@@ -71,7 +58,7 @@ public class IntermediateTasks {
 //        String reverse = "";
 //
 //
-//        while (index > 0) {
+//        while (index >= 0) {
 //            reverse = reverse + sentence.charAt(index);
 //            index--;
 //        }
@@ -79,14 +66,12 @@ public class IntermediateTasks {
 
 
         //TASK-6
-        // 6. Verilmiş ədədin Armstrong (narsis) ədəd olub-olmadığını yoxla (məs: 153 =
-        //         1³+5³+3³).
-        //reqem sayi da tapmaliyam
+        //Verilmiş ədədin Armstrong (narsis) ədəd olub-olmadığını yoxla (məs: 153 = 1³+5³+3³)
 //
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("eded daxil edin:");
 //        int num = sc.nextInt();
-//        int constnum = num;
+//        int constNum = num;
 //        int count = 0;
 //
 //        while (num > 0) {
@@ -95,7 +80,7 @@ public class IntermediateTasks {
 //        }
 //
 //        double arms = 0;
-//        num = constnum;
+//        num = constNum;
 //
 //        while (num > 0) {
 //            int qaliq = num % 10;
@@ -103,9 +88,10 @@ public class IntermediateTasks {
 //            num = num / 10;
 //        }
 //
-//        if (constnum == arms) {
+//        if (constNum == arms)
 //            System.out.println("eded arms");
-//        } else System.out.println("deyil");
+//        else
+//            System.out.println("deyil");
 
 
         //TASK-10
@@ -117,14 +103,12 @@ public class IntermediateTasks {
 //        int count = 1;
 //        int sum = 0;
 //
-//        while (num >= count) {
-//            if (num % count == 0) {
+//        while (num/2 >= count) {
+//            if (num % count == 0)
 //                sum = sum + count;
-//            }
 //            count++;
 //        }
 //        System.out.println(sum);
-
 
 
         //TASK-8
@@ -141,11 +125,11 @@ public class IntermediateTasks {
 //            pin = sc.nextLine();
 //            if (!(pin.equals(truePin))) {
 //                System.out.println("parol daxil edin");
-//
+//            }else{
+//                System.out.println("Ugurla daxil oldunuz");
+//                break;
 //            }
-//        } while (!(pin.equals(truePin)));
-//        System.out.println("Ugurla daxil oldunuz");
-
+//        } while (true);
 
 
         //TASK-5
@@ -162,11 +146,12 @@ public class IntermediateTasks {
 //            int remainder = eded % 10;
 //            reverse = reverse * 10 + remainder;
 //            eded = eded / 10;
-//
 //        }
-//        if (consteded == reverse) {
+//
+//        if (consteded == reverse)
 //            System.out.println("eded polindromdur");
-//        } else System.out.println("eded polindrom deyil");
+//        else
+//            System.out.println("eded polindrom deyil");
 
 
 
@@ -184,68 +169,66 @@ public class IntermediateTasks {
 //
 //        do {
 //            System.out.println("emel daxil edin:1.toplama, 2.çıxma, 3.vurma, 4.bölmə ,5.Çıxış");
-//
 //            choice = sc.nextInt();
 //            if (choice == 1) {
 //                int sum = num1 + num2;
 //                System.out.println(sum);
-//            } else if (choice == 2) {
+//            }else if (choice == 2) {
 //                int dif = num1 - num2;
 //                System.out.println(dif);
-//            } else if (choice == 3) {
+//            }else if (choice == 3) {
 //                int multip = num1 * num2;
 //                System.out.println(multip);
-//            } else if (choice == 4) {
+//            }else if (choice == 4) {
 //                if (num2 != 0) {
 //                    double div = num1 / num2;
 //                    System.out.println(div);
+//                }else{
+//                    System.out.println("0-a Bolme olmaz");
 //                }
-//            } else if (choice != 5)
-//                System.out.println("dogru sechim daxil edin:");
-//
-//        } while (choice != 5);
-//        System.out.println("chixish");
-
+//            }else if (choice == 5) {
+//                System.out.println("chixish");
+//                break;
+//            }else{
+//                System.out.println("Duzgun secim edin");
+//            }
+//        } while (true);
 
 
         //TASK-11
         //11. Collatz ardıcıllığını simulyasiya et: ədəd cütdürsə 2-yə böl,
         // təkdirsə 3n+1 et, ədəd 1-ə çatana qədər davam et.
-
+//
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("eded daxil edin:");
 //        int num = sc.nextInt();
 //
 //        while (num > 1) {
-//            if (num % 2 == 0) {
+//            if (num % 2 == 0){
 //                num = num / 2;
-//            } else {
+//                System.out.println(num);
+//            }else {
 //                num = num * 3 + 1;
 //            }
-//
 //        }
-//        System.out.println(num);
-
 
 
         //TASK-2
         //  2. Fibonacci ardıcıllığının ilk N ədədini while dövrü ilə çap et.
-        // 0 +1 +1+ 2+ 3 5
 
-//        Scanner sc =new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        System.out.println("hansi edededek chap olunacaq?");
-//        int  limit=sc.nextInt();//7
+//        int limit = sc.nextInt();
 //
-//        int num1=0;
-//        int num2=1;
+//        int num1 = 0;
+//        int num2 = 1;
 //
-//        while(num1<=limit){
+//        while(num1 <= limit){
 //            System.out.println(num1);
-//            int nextnum=num1+num2;
-//            num1=num2;
-//            num2=nextnum;
-        //      }
-
+//            int nextNum = num1 + num2;
+//            num1 = num2;
+//            num2 = nextNum;
+//       }
 
 
         //TASK-7
@@ -260,26 +243,24 @@ public class IntermediateTasks {
 //
 //        while (num > 0) {
 //            int remainder = num % 2;
-//            binary = binary + remainder;
+//            binary = remainder + binary;
 //            num = num / 2;
 //        }
 //        System.out.println(binary);
 
 
-
         //TASK-9
         //9. İki ədəd aralığında (A və B) olan bütün sadə ədədləri tapıb çap et.
-
+//
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("1.ededi daxil edin:");
-//        int num1 = sc.nextInt();
+//        int num1 = sc.nextInt(); //28
 //
 //        System.out.println("2.ededi daxil edin:");
-//        int num2 = sc.nextInt();
+//        int num2 = sc.nextInt(); //5
 //        num1++;
 //
 //        while (num1 < num2) {
-//
 //            if (num1 > 1) {
 //                int count = 0;
 //                int div = 1;
@@ -290,7 +271,6 @@ public class IntermediateTasks {
 //                    }
 //                    div++;
 //                }
-//
 //
 //                if (count == 2) {
 //                    System.out.println(num1);
@@ -313,9 +293,7 @@ public class IntermediateTasks {
 //        int gcb = 1;
 //        int div = 1;
 //
-//
 //        while (div <= num1 && div <= num2) {
-//
 //            if (num1 % div == 0 && num2 % div == 0) {
 //                gcb = div;
 //            }
@@ -325,7 +303,7 @@ public class IntermediateTasks {
 //
 //
 //        //TASK-4-EKOB
-//
+
 //        int lcm = (num1 * num2) / gcb;
 //        System.out.println("ekob=" + lcm);
 
